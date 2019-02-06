@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Email Perspektywy</title>
+		<style>
+
+		/* reset */
+
+		img {
+			border: none;
+			max-width: 100%; 
+		}
+
+		body {
+			background-color: #f6f6f6;
+			font-family: sans-serif;
+			-webkit-font-smoothing: antialiased;
+			font-size: 14px;
+			line-height: 1.4;
+			margin: 0;
+			padding: 0;
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%; 
+		}
+
+		table {
+			border-collapse: separate;
+			border-spacing: 0;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+			width: 100%; 
+		}
+
+		table td {
+			font-family: sans-serif;
+			font-size: 14px;
+			vertical-align: top; 
+			padding: 0;
+		}
+
+		/* containers */
+
+		.body {
+			background-color: #f6f6f6;
+			width: 100%; 
+		}
+
+		.container {
+			display: block;
+			margin: 0 auto !important;
+			max-width: 580px;
+			width: 580px; 
+			padding: 10px;
+		}
+
+		.content {
+			box-sizing: border-box;
+			display: block;
+			margin: 0 auto;
+			max-width: 580px;
+			padding: 10px; 
+		}
+
+		.main {
+			background: #ffffff;
+			border-radius: 0px;
+			width: 100%; 
+		}
+
+		.wrapper {
+			box-sizing: border-box;
+			padding: 20px; 
+		}
+
+		.wrapper-bg {
+			background-color: #f6f6f6;
+		}
+
+		.footer {
+			clear: both;
+			width: 100%; 
+			margin: 5px 15px;
+		}
+
+		.footer a {
+			color: #000;
+		}	
+
+		.footer .small {
+			font-size: 10px;
+			font-weight: 600;
+		}
+
+		.footer .small a {
+			font-size: 11px;
+			font-weight: 400;
+		}	
+
+		.footer .rodo p {
+			font-size: 8px;
+			margin: 0;
+		}
+
+		/* typo */
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			color: #000000;
+			font-family: sans-serif;
+			font-weight: 600;
+			line-height: 1.4;
+			margin: 15px 0;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 20px;
+			line-height: 1.4;
+			margin: 20px 0;
+			text-transform: uppercase; 
+		}
+
+		h2 {
+			font-size: 14px;
+			text-transform: uppercase; 
+		}
+
+		p,
+		ul,
+		ol {
+			font-family: sans-serif;
+			font-size: 14px;
+			font-weight: normal;
+			margin: 0;
+			margin-bottom: 15px; 
+		}
+		
+		ul li,
+		ol li {
+			list-style-position: inside;
+			margin-left: 10px; 
+		}
+
+		a {		
+			text-decoration: underline; 
+		}
+
+		.primary {
+			color: #fc5c00;
+		}
+
+		.secondary {
+			color: #3498db;
+		}
+
+		/* buttons */
+		.btn {
+			box-sizing: border-box;
+			width: 100%; 
+			text-align: center;
+		}
+
+		.btn table {
+			width: 100%; 
+			margin: 20px 0; 
+		}
+
+		.btn a {
+			background-color: #f48342;
+			border: solid 1px #f48342;
+			border-radius: 0px;
+			box-sizing: border-box;
+			color: #ffffff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 14px;
+			font-weight: bold;
+			margin: 0;
+			padding: 10px 30px;
+			text-decoration: none;
+			text-transform: uppercase; 
+		}
+
+		.btn-secondary a {
+			background-color: #a50179;
+			border-color: #a50179;
+			color: #ffffff; 
+		}
+
+		.btn a:hover {
+			background-color: #fc5c00 !important;
+			border-color: #fc5c00 !important; 
+		}
+
+		/* faq */
+
+		.faq {
+			margin-left: 15px;
+			margin-bottom: 15px;
+		}
+
+		.faq p {
+			margin: 0;
+			margin-left: 5px;
+		}
+
+		.faq p.faq-title {
+			margin: 0;
+			font-weight: 600;
+		}
+
+		/* global */		
+
+		.align-center {
+			text-align: center; 
+		}
+
+		.align-right {
+			text-align: right; 
+		}
+
+		.align-left {
+			text-align: left; 
+		}
+
+		.clear {
+			clear: both; 
+		}
+
+		.mt0 {
+			margin-top: 0; 
+		}
+
+		.mt20 {
+			margin-top: 20px !important; 
+		}
+
+		.mb0 {
+			margin-bottom: 0; 
+		}	
+
+		.mb20 {
+			margin-bottom: 20px !important; 
+		}
+
+		/* mobile */
+
+		@media only screen and (max-width: 620px) {
+			.content {
+				padding: 0;
+			}
+			table[class=body] h1 {
+				font-size: 22px !important;
+			}
+			table[class=body] p,
+			table[class=body] ul,
+			table[class=body] ol,
+			table[class=body] td,
+			table[class=body] span,
+			table[class=body] a {
+				font-size: 16px !important; 
+			}		
+			table[class=body] .container {
+				padding: 0 !important;
+				width: 100% !important; 
+			}
+			table[class=body] .main {
+				border-left-width: 0 !important;
+				border-radius: 0 !important;
+				border-right-width: 0 !important; 
+			}
+			table[class=body] .btn table {
+				width: 100% !important; 
+			}
+			table[class=body] .btn a {
+				width: 100% !important; 
+			}
+			table[class=body] .img-responsive {
+				height: auto !important;
+				max-width: 100% !important;
+				width: auto !important; 
+			}
+		}
+		
+		@media all {
+			.ExternalClass {
+				width: 100%; 
+			}
+			.ExternalClass,
+			.ExternalClass p,
+			.ExternalClass span,
+			.ExternalClass font,
+			.ExternalClass td,
+			.ExternalClass div {
+				line-height: 100%; 
+			}
+			.apple-link a {
+				color: inherit !important;
+				font-family: inherit !important;
+				font-size: inherit !important;
+				font-weight: inherit !important;
+				line-height: inherit !important;
+				text-decoration: none !important; 
+			}		 
+		}
+
+		</style>
+	</head>
+	<body class="">
+		<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+			<tr>
+			<td>&nbsp;</td>
+			<td class="container">
+			  <div class="content">
+			   
+			    <table role="presentation" class="main">
+
+			      <!-- START MAIN CONTENT AREA -->
+			      <tr>
+			  		<td>
+			  			<img src="http://www.perspektywy.pl/portal/images/aktualnosci/wydarzenia/2019-01-25-socialmedia-a.jpg" alt="testowy obrazek nagłówka" title="perspektywy">
+			  		</td>
+			  	</tr>
+			      <tr>
+			        <td class="wrapper">
+			          <table role="presentation" border="0" cellpadding="0" cellspacing="0">                  	
+			            <tr>
+			              <td>
+			                <h1>PERSPEKTYWY<br />WOMEN IN TECH SUMMIT 2018<br />REJESTRACJA NA WARSZTATY</h1>
+			                <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
+			                  <tbody>
+			                    <tr>
+			                      <td>
+			                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+			                          <tbody>
+			                            <tr>
+			                              <td> <a href="#" target="_blank">TO READ THIS EMAIL IN ENGLISH CLICK HERE</a> </td>
+			                            </tr>
+			                          </tbody>
+			                        </table>
+			                      </td>
+			                    </tr>
+			                  </tbody>
+			                </table>
+			                <p class="mt20">Już za kilka dni widzimy się na <a href="#" target="_blank">Perspektywy Women in Tech Summit!</a></p>
+			                <p>Żeby ułatwić Ci maksymalne skorzystanie z bogatego programu konferencji, przygotowaliśmy dla Ciebie indywidualny system rejestracji, dzięki któremu stworzysz swoją własną Agendę!</p>
+			                <p class="mb0"><strong>Jak to działa?</strong></p>
+			                <p>Poniżej znajdziesz przycisk, który przekieruje Cię do Twojego Indywidualnego Konta. Kliknij w niego i wybierz panele i warsztaty, w których chcesz uczestniczyć.</p>
+			                <p class="mt20 mb20 primary align-center"><strong>Ważne! Przy zapisach na warsztaty decyduje kolejność zgłoszeń!</strong></p>
+			                <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-secondary">
+			                  <tbody>
+			                    <tr>
+			                      <td>
+			                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+			                          <tbody>
+			                            <tr>
+			                              <td> <a href="#" target="_blank">ZAREJESTRUJ SIĘ!</a> </td>
+			                            </tr>
+			                          </tbody>
+			                        </table>
+			                      </td>
+			                    </tr>
+			                  </tbody>
+			                </table>
+			              </td>
+			            </tr>
+			          </table>
+			        </td>			        
+			      </tr>
+			      <tr>
+				      <td class="wrapper wrapper-bg">
+				        	<h2>KILKA WAŻNYCH ZASAD! PRZECZYTAJ</h2>
+				        	<p><strong>Rejestracja przebiega w dwóch turach</strong>: pierwsza tura rusza teraz i <strong>trwa do 16 listopada (piątek) do godziny 23:59</strong>. W tym czasie możesz dowolnie edytować swoją agendę, wchodząc na nią przez ten mail.</p>
+				        	<p>O godzinie 23.59 w piątek system się zamyka. <strong>We wtorek 20 listopada dostaniesz od nas mailem informację</strong>, czy udało Ci się dostać na dany warsztat. Od tego dnia ruszy też druga tura rejestracji i potrwa aż do momentu rozpoczęcia danego warsztatu.</p>
+				      </td>
+			      </tr>
+			      <tr>
+			          <td class="wrapper">
+			        	<h2>FAQ</h2>			        	
+			        	<table class="faq" role="presentation" border="0" cellpadding="0" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <td>
+                              	<p class="faq-title">1. Co jeśli zapiszę się na warsztat, ale ostatecznie chcę z niego zrezygnować?</p>
+                              	<p>W takich sytuacjach edytuj swoją Agendę klikając w przycisk poniżej i odznaczając warsztat. Wtedy ktoś inny może z niego skorzystać.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                              	<p class="faq-title">2. Co jeśli zapiszę się na warsztat/panel, ale jednak checę zmienić swój wybór po 20 listopada? </p>
+                              	<p>W takich przypadkach po prostu kliknij w przycisk poniżej i zmień warsztat na któryś z jeszcze dostępnych lub na panel.</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+			        	<p class="mb0">Masz pytania?</p>
+						<p>Pisz na <a href=#">registration@perspektywy.pl</a></p>
+
+			          </td>
+		          </tr>
+
+			    <!-- END MAIN CONTENT AREA -->
+			    </table>
+
+			    <!-- START FOOTER -->
+			    <div class="footer">
+			      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+			        <tr class="align-center">
+			          <td>
+			            <p class="small">Jeśli ta wiadomość nie wyświetla się poprawnie, <a href="#">zobacz podgląd wiadomości</a> w przeglądarce. </p>
+			          </td>
+			        </tr>
+			        <tr>
+			          <td class="rodo">
+			            <p>Zgodnie z obowiązkiem wynikającym z art. 13 RODO uprzejmie informujemy, że:</p>
+			            <p>1) Administratorem Państwa danych osobowych jest Fundacja Edukacyjna Perspektywy z siedzibą w Warszawie, ul. Nowogrodzka 31, kod pocztowy 00-511 (dalej także: "Fundacja"), numer KRS: 0000176397</p>
+						<p>2) Z powołanym w Fundacji Inspektorem Ochrony Danych mogą Państwo się skontaktować kierując korespondencję drogą tradycyjną pod powyższy adres siedziby Fundacji (z dopiskiem "IOD") lub poprzez pocztę elektroniczną na adres: rodo@perspektywy.org</p>
+						<p>3) Państwa dane osobowe będą przetwarzane w następujących okolicznościach w oparciu o poniższe podstawy prawne:</p>
+						<p>- w celach marketingowych (uwzględniających także profilowanie w tych celach) - jako realizacja prawnie uzasadnionych interesów Administratora Danych, do których należy marketing bezpośredni produktów i usług</p>
+						<p class="align-center mt20"><resignlink>Zrezygnuj z otrzymywania wiadomości</resignlink></p>
+			          </td>
+			        </tr>
+			      </table>
+			    </div>
+			    <!-- END FOOTER -->
+
+			  <!-- END CENTERED WHITE CONTAINER -->
+			  </div>
+			</td>
+			<td>&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>

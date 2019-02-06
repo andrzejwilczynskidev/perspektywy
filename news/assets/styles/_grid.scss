@@ -1,0 +1,36 @@
+.container {
+	max-width: 1140px;
+	margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+	margin-right: -15px;
+    margin-left: -15px;
+    @include flex();
+}
+
+.col-xs-6, .col-md-4 {
+	position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-6 {
+	@include media-up(xs) {		
+	    @include flex-col(0, 0, 50%);
+	}
+	
+}
+
+.col-md-4 {
+	@include media-up(md) {		
+	    @include flex-col(0, 0, 33.333333%);
+	}
+	
+}
